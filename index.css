@@ -1,0 +1,248 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    background: rgba(55, 61, 73, 0.975);
+    color: #fff;
+    box-shadow: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3.75em;
+    font-size: 0.9em;
+}
+
+.header-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.media-link-container i {
+    margin: 0px 0.5em;
+}
+
+.general {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 8em;
+    padding-bottom: 4em;
+    border-bottom: 3px solid #dce5ec;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.general .sub-title {
+    opacity: 80%;
+    font-size: 1.1em;
+}
+
+.general p {
+    font-size: 0.9rem;
+    opacity: 85%;
+}
+
+.general .img-wrapper {
+    margin: auto;
+}
+
+.general img {
+    border-radius: 4px;
+    width: 15em;
+}
+
+.button-container {
+    margin-top: 2em;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 0.375em;
+    border: 0;
+    box-shadow: inset 0 0 0 2px #f56a6a;
+    color: #f56a6a;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 2.8em;
+    padding: 0 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .general {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .general .info {
+        margin: 0em 2em;
+    }
+
+    .general .button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .general .info {
+        margin-bottom: 3em;
+    }
+}
+
+@media (max-width: 400px) {
+    .general {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .general .info {
+        margin: 0em;
+    }
+
+    .general .button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .general .info {
+        margin-bottom: 3em;
+    }
+}
+
+.posts-wrapper {
+    margin-top: 2em;
+    padding-bottom: 4em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.post {
+    margin: 0em 1em 3em;
+    text-align: center;
+}
+
+.post .img-container img {
+    border-radius: 4px;
+}
+
+.post .title {
+    font-size: 1em;
+    margin-top: 2em;
+}
+
+.post p {
+    font-size: 0.85em;
+    opacity: 85%;
+    text-align: justify;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.5em;
+}
+
+.title-wrapper .title-container {
+    width: fit-content;
+    height: fit-content;
+    border-bottom: solid #f56a6a;
+}
+
+.title-wrapper .title-container h1 {
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .posts-container {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+}
+
+.skills-wrapper {
+    margin-top: 2em;
+    padding-bottom: 1em;
+    border-bottom: 3px solid #dce5ec;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.skills-container .skill .info {
+    padding-left: 1em;
+}
+
+.skills-container .info .skill-title {
+    font-size: 1.1em;
+    margin-top: 0em;
+}
+
+.skills-container .info {
+    font-size: 0.9em;
+    opacity: 90%;
+    padding: 0em;
+}
+
+.skills-container .skill {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 3em;
+}
+
+.skills-container .skill img {
+    width: 3em;
+    width: 100%;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 0em;
+    }
+}
+
+footer {
+    background: rgba(55, 61, 73, 0.975);
+    color: #fff;
+    box-shadow: none;
+    width: 100%;
+    height: 3em;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    line-height: 3em;
+}
+
+footer a {
+    color: white;
+}
